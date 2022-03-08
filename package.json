@@ -1,0 +1,32 @@
+{
+  "name": "api-chat",
+  "version": "1.0.0",
+  "description": "Desarrollo y documentacion de API de la Aplicacion Chat a desarrollar en clase",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JpValdesGalan/API-Chat.git"
+  },
+  "keywords": [
+    "API"
+  ],
+  "author": "Juan Pablo Valdes Galan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JpValdesGalan/API-Chat/issues"
+  },
+  "homepage": "https://github.com/JpValdesGalan/API-Chat#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongodb": "^4.4.1",
+    "node": "^17.5.0",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
