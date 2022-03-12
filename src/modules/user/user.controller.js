@@ -22,14 +22,7 @@ const UsersController = {
     },
     update: (req, res) => {
         console.log('User updated');
-    },
-    login: (req, res) => {
-        console.log('Login');
-    },
-    register: (req, res) => {
-        console.log('register');
-    },
-    
+    }
 }
 
 module.exports = UsersController;

@@ -30,6 +30,10 @@ class Model {
     create() {
         
     }
+
+    update() {
+        
+    }
 }
 
 module.exports = Model;

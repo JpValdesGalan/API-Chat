@@ -19,6 +19,9 @@ const MessagesController = {
     },
     create: (req, res) => {
         console.log('Message created');
+    },
+    update: (req, res) => {
+        console.log('Message updated');
     }
 }
 
