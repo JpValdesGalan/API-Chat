@@ -5,12 +5,16 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
+// Load Routes
+const apiRoutes = require('./src/routes/api');
+
 // Init app
 const app = express();
 const port = process.env.PORT || 3000;
 
 // Route middlewares
 app.use('/assets', express.static(path.join(__dirname, 'public')));
+app.use('/api', apiRoutes)
 
 // Set main endpoint
 app.use('/', (req, res) => {
