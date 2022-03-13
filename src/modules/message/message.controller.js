@@ -17,11 +17,9 @@ const MessagesController = {
             }
         });
     },
-    create: (req, res) => {
-        console.log('Message created');
-    },
-    update: (req, res) => {
-        console.log('Message updated');
+    createMessage: (req, res) => {
+        const message = new Message();
+        message.createMessage(author, body, date);
     }
 }
 

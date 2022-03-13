@@ -43,24 +43,8 @@ const controller = require('./user.controller');
   *         200:
   *           description: User created
   */
- router.post('/', controller.create);
- 
- /**
-  * @swagger
-  *   /api/users/{id}:
-  *     post:
-  *       tags:
-  *       - Users
-  *       description: Create a user
-  *       parameters:
-  *         - in: path
-  *           name: id
-  *           required: true
-  *           description: The user's unique ID
-  *       responses:
-  *         200:
-  *           description: Updated user
-  */
- router.post('/:id', controller.update);
+ router.post('/', controller.createUser);
+
+ //router.post('/:id', controller.update);
 
 module.exports = router;
