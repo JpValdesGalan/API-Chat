@@ -43,24 +43,8 @@ router.get('/:id', controller.getOne);
  *         200:
  *           description: Channel created
  */
-router.post('/:id', controller.create);
+router.post('/:id', controller.createChannel);
 
-/**
- * @swagger
- *   /api/channels/{id}:
- *     post:
- *       tags:
- *       - Channels
- *       description: Create a channel
- *       parameters:
- *         - in: path
- *           name: id
- *           required: true
- *           description: The channel's unique ID
- *       responses:
- *         200:
- *           description: Updated channel
- */
-router.post('/:id', controller.update);
+ //router.post('/:id', controller.update);
 
 module.exports = router;

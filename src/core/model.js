@@ -26,14 +26,6 @@ class Model {
             _id: ObjectId(id)
         })
     }
-
-    create() {
-        
-    }
-
-    update() {
-        
-    }
 }
 
 module.exports = Model;

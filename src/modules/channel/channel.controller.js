@@ -17,11 +17,9 @@ const ChannelsController = {
             }
         });
     },
-    create: (req, res) => {
-        console.log('Channel created');
-    },
-    update: (req, res) => {
-        console.log('Channel updated');
+    createChannel: (req, res) => {
+        const channel = new Channel();
+        channel.createChannel();
     }
 }
 

@@ -43,24 +43,8 @@ const controller = require('./message.controller');
  *         200:
  *           description: Message created
  */
- router.post('/', controller.create);
+ router.post('/', controller.createMessage);
 
-  /**
-  * @swagger
-  *   /api/messages/{id}:
-  *     post:
-  *       tags:
-  *       - Messages
-  *       description: Create a message
-  *       parameters:
-  *         - in: path
-  *           name: id
-  *           required: true
-  *           description: The message's unique ID
-  *       responses:
-  *         200:
-  *           description: Updated message
-  */
-   router.post('/:id', controller.update);
+ //router.post('/:id', controller.update);
 
 module.exports = router;

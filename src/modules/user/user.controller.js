@@ -17,12 +17,10 @@ const UsersController = {
             }
         });
     },
-    create: (req, res) => {
-        console.log('User created');
-    },
-    update: (req, res) => {
-        console.log('User updated');
+    createUser: (req, res) => {
+        const user = new User();
+        user.createUser(username, email, password, role);
     }
-}
+};
 
 module.exports = UsersController;
